@@ -1,11 +1,37 @@
 ## Docker commands used to build the application 
-# TODO: insert the docker build command
+docker build -t techtrends .
 
 ## Docker commands used to run the application
-# TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
-# TODO: insert the docker logs command
+docker logs 6d0c1648bea33319
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+* Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug:27/11/2021, 10:17:10   * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:27/11/2021, 10:17:38  172.17.0.1 - - [27/Nov/2021 10:17:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:17:38  172.17.0.1 - - [27/Nov/2021 10:17:38] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:17:38  172.17.0.1 - - [27/Nov/2021 10:17:38] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:27/11/2021, 10:19:57  Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:27/11/2021, 10:19:57  172.17.0.1 - - [27/Nov/2021 10:19:57] "GET /1 HTTP/1.1" 200 -
+INFO:app:27/11/2021, 10:20:05  About Us retrieved!
+INFO:werkzeug:27/11/2021, 10:20:05  172.17.0.1 - - [27/Nov/2021 10:20:05] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:20:10  172.17.0.1 - - [27/Nov/2021 10:20:10] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:20:20  172.17.0.1 - - [27/Nov/2021 10:20:20] "GET /healthz HTTP/1.1" 200 -
+INFO:app:27/11/2021, 10:20:25  Article "CNCF Cloud Native Definition v1.0" retrieved!
+INFO:werkzeug:27/11/2021, 10:20:25  172.17.0.1 - - [27/Nov/2021 10:20:25] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:20:29  172.17.0.1 - - [27/Nov/2021 10:20:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:20:59  172.17.0.1 - - [27/Nov/2021 10:20:59] "GET /create HTTP/1.1" 200 -
+INFO:app:27/11/2021, 10:21:48  New Article "2021 CNCF Annual Report" is created.
+INFO:werkzeug:27/11/2021, 10:21:48  172.17.0.1 - - [27/Nov/2021 10:21:48] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:27/11/2021, 10:21:48  172.17.0.1 - - [27/Nov/2021 10:21:48] "GET / HTTP/1.1" 200 -
+INFO:app:27/11/2021, 10:22:01  Article does not Exist!
+INFO:werkzeug:27/11/2021, 10:22:01  172.17.0.1 - - [27/Nov/2021 10:22:01] "GET /55 HTTP/1.1" 404 -
+INFO:app:27/11/2021, 10:22:05  Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:27/11/2021, 10:22:05  172.17.0.1 - - [27/Nov/2021 10:22:05] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:27/11/2021, 10:22:08  172.17.0.1 - - [27/Nov/2021 10:22:08] "GET / HTTP/1.1" 200 -
