@@ -31,5 +31,5 @@ livenessProbe:
 
 readinessProbe:
   httpGet:
-    path: /health
+    path: /healthz
     port: containerPort
