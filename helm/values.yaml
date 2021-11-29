@@ -8,7 +8,7 @@ service:
   type: ClusterIP
 
 image:
-  repository: techtrends 
+  repository: sharsha315/techtrends 
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -22,14 +22,16 @@ resources:
     cpu: 500m
     memory: 128Mi
 
-containerPort: 3111
+ports:
+  containerPort: 3111
+  protocol: TCP
 
 livenessProbe:
   httpGet:
-    path: /healthz
-    port: containerPort
+    path: /
+    port: 3111
 
 readinessProbe:
   httpGet:
-    path: /healthz
-    port: containerPort
+    path: /
+    port: 3111

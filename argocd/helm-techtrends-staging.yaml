@@ -13,7 +13,6 @@ spec:
       valueFiles:
         - values-staging.yaml
     path: helm
-    repoURL: https://github.com/sharsha315/project_techtrends
+    repoURL: https://github.com/sharsha315/project_techtrends.git
     targetRevision: HEAD
-  # Sync policy
-  syncPolicy: {}
+  
