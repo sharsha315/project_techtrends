@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/sharsha315/udacityProjects/project_techtrends","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
